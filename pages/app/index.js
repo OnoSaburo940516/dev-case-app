@@ -12,13 +12,13 @@ const Home = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
             <Head>
-                <title>DEVcase</title>
+                <title>TheProjectX</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main className="container flex flex-col justify-center items-center min-h-screen">
-                <h1 className="text-6xl md:text-9xl mt-10 font-black text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-purple-600">Welcome</h1>
-                <h1 className="text-xl text-center font-black text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-purple-600">This page can only be accessible after login</h1>
+                <h1 className="text-6xl md:text-9xl mt-10 font-black text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-purple-600">TheProjectX</h1>
+                <h1 className="text-xl text-center font-black text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-purple-600">Welcome! This page can only be accessible after login</h1>
                 <img src="/Saly.svg" alt="" className="w-1/3" />
                 {
                     userData.username ? <Link href={`/app/${userData.username}`}>

@@ -70,7 +70,7 @@ const Register = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
             <Head>
-                <title>Register - DEVcase</title>
+                <title>Register - TheProjectX</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

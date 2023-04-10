@@ -25,7 +25,7 @@ const ForgetPassword = () => {
     return (
         <div className="flex flex-col items-center justify-start min-h-screen py-2">
             <Head>
-                <title>Forget Passowrd - DEVcase</title>
+                <title>Forget Passowrd - TheProjectX</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
