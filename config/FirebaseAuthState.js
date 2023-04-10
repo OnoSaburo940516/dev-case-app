@@ -20,6 +20,9 @@ const FirebaseAuthState = ({ children }) => {
                     const { token } = await user.getIdTokenResult();
                     localStorage.setItem('TOKEN', token)
 
+                    console.log("TOKEN");
+                    console.log(token);
+
                     const res1 = await fetch('/api/firebase/user', {
                         method: 'GET',
                         headers: {
@@ -31,6 +34,8 @@ const FirebaseAuthState = ({ children }) => {
                     const data1 = await res1.json()
 
                     if (res1.status === 400 || res1.status === 500) {
+                        console.log("ABCDEFG");
+                        console.log(res1);
                         dispatch({
                             type: 'USER_AUTH_LOGIN_FAIL',
                             payload: data1
@@ -54,3 +59,4 @@ const FirebaseAuthState = ({ children }) => {
 }
 
 export default FirebaseAuthState
+

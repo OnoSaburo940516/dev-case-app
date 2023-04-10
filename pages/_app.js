@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
           <FirebaseAuthState>
             <Layout>
               <Navbar />
-              <Component {...pageProps} />
+               <Component {...pageProps} />
             </Layout>
           </FirebaseAuthState>
         </Provider>
