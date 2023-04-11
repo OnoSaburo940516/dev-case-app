@@ -1,10 +1,10 @@
-export const updateUsername = (username) => async (dispatch) => {
+export const updateUsername = (userName) => async (dispatch) => {
 
     const formdata = {
-        username: username
+        userName: userName
     }
 
-    if (username !== 'ERROR') {
+    if (userName !== 'ERROR') {
         try {
             const res = await fetch('/api/firebase/profile', {
                 method: 'PUT',

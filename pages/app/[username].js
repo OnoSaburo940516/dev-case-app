@@ -14,7 +14,7 @@ const Profile = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch(`https://api.github.com/users/${userData.username}`, {
+            const res = await fetch(`https://api.github.com/users/${userData.userName}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

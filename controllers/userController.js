@@ -14,7 +14,7 @@ export const UpdateProfile = async (req, res) => {
     if (true) {
         try {
             const profile = await User.findById(req.currentUser.id)
-            profile.username = req.body.username;
+            profile.userName = req.body.userName;
             const hef = await profile.save();
             res.status(200).json(hef)
         } catch (err) {

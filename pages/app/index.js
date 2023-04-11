@@ -21,7 +21,7 @@ const Home = () => {
                 <h1 className="text-xl text-center font-black text-transparent bg-clip-text bg-gradient-to-br from-red-500 to-purple-600">Welcome! This page can only be accessible after login</h1>
                 <img src="/Saly.svg" alt="" className="w-1/3" />
                 {
-                    userData.username ? <Link href={`/app/${userData.username}`}>
+                    userData.userName ? <Link href={`/app/${userData.userName}`}>
                         <button className="btn">Go to Profile</button>
                     </Link> : loading ? <button className="btn loading btn-ghost"></button> : error
                 }
