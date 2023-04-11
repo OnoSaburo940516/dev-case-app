@@ -31,6 +31,8 @@ const Login = () => {
         await firebase.auth().signInWithEmailAndPassword(email, password)
             .then((user) => {
                 if (user.user.emailVerified) {
+                    console.log("PASSWORD");
+                    console.log(user);
                     alert('Logged in Successfully 🎉')
                     setLoading(false)
                     router.push('/app')
